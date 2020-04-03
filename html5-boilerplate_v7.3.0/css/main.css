@@ -260,6 +260,117 @@ textarea {
   h2,
   h3 {
     page-break-after: avoid;
+  }}
+
+  @font-face{
+    font-family: lato;
+    src: url("../Lato/Lato-Regular.ttf");
+    font-weight: regular;
   }
+
+  @font-face{
+    font-family: lato;
+    src: url("../Lato/Lato-Light.ttf");
+    font-weight: 300;
+  }
+
+  @font-face{
+    font-family: lato;
+    src: url("../Lato/Lato-Bold.ttf");
+    font-weight: bold;
+  }
+
+
+.headline{
+  background-color: #53a2da;
+}
+.headline h1{
+  color: white;
+  font-family: lato;
+  font-weight: 300;
+  font-size: 2em;
+  padding: 15px 15px 0 15px;
+  margin: 0;
+}
+.headline p{
+  color: white;
+  font-family: lato;
+  font-weight: regular;
+  font-size: 1em;
+  padding: 15px 15px 0 15px;
+  margin: 0;
+}
+.headline button{
+  background-color: white;
+  color: #53a2da;
+  font-family: lato;
+  font-weight: regular;
+  font-size: 1em;
+  margin: 20px 15px 25px 15px;
+  padding: 8px 15px;
+  width: 175px;
+  text-align: left;
+  border: 0;
+}
+.headline button i {
+text-align: right;
 }
 
+.breadcrumbs {
+  font-family: lato;
+  font-weight: regular;
+  font-size: 1em;
+}
+.breadcrumbs span {
+  margin-left: 15px;
+  color: #53a2da;
+}
+.active {
+  color: #acacac;
+}
+.breadcrumbs i {
+  font-size: 0.4em;
+}
+h2{
+  font-family: lato;
+  font-weight: 300;
+  font-size: 2em;
+}
+h3{
+  font-family: lato;
+  font-weight: 300;
+  font-size: 1.5em;  
+}
+p{
+  font-family: lato;
+  font-weight: regular;
+  font-size: 1em;
+}
+h4{
+  font-family: lato;
+  font-weight: 300;
+  font-size: 1.2em;
+}
+
+article{
+  height: 1000px;
+}
+footer{
+  height: 400px;
+  background-color: gray;
+}
+img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+.sidebar{
+  width: 90px;
+  display: inline-block;
+}
+@media only screen and (min-width: 1600px) {
+  .wrapper{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+}
