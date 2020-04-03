@@ -262,6 +262,12 @@ textarea {
     page-break-after: avoid;
   }}
 
+
+
+body{
+  padding-left: 10px;
+  padding-right: 10px;
+}
   @font-face{
     font-family: lato;
     src: url("../Lato/Lato-Regular.ttf");
@@ -279,19 +285,74 @@ textarea {
     src: url("../Lato/Lato-Bold.ttf");
     font-weight: bold;
   }
-
+nav{
+  font-family: lato;
+  font-weight: 400;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+nav li{
+  padding: 5px;
+}
+nav a{
+  text-decoration: none;
+  color: #53a2da;
+}
+nav a:hover{
+  color: #297a9a;
+}
+#searchbar{
+  background-color: #eef1f5;
+  color: #acacac;
+}
+  h1{
+    color: white;
+    font-family: lato;
+    font-weight: 300;
+    font-size: 2em;
+    padding: 15px 15px 0 15px;
+    margin: 0;
+  }
+  h2{
+    font-family: lato;
+    font-weight: 300;
+    font-size: 2em;
+  }
+  h3{
+    font-family: lato;
+    font-weight: 300;
+    font-size: 1.5em;  
+  }
+  
+  h4{
+    font-family: lato;
+    font-weight: 300;
+    font-size: 1.2em;
+  }
+  h5{
+    font-family: lato;
+    font-weight: regular;
+    font-size: 1em;
+  }
+  p{
+    font-family: lato;
+    font-weight: regular;
+    font-size: 1em;
+  }
+  img {
+      height: auto;
+      max-width: 100%;
+  }
 
 .headline{
   background-color: #53a2da;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
 }
-.headline h1{
-  color: white;
-  font-family: lato;
-  font-weight: 300;
-  font-size: 2em;
-  padding: 15px 15px 0 15px;
-  margin: 0;
-}
+
 .headline p{
   color: white;
   font-family: lato;
@@ -301,6 +362,7 @@ textarea {
   margin: 0;
 }
 .headline button{
+  display: flex;
   background-color: white;
   color: #53a2da;
   font-family: lato;
@@ -311,12 +373,16 @@ textarea {
   width: 175px;
   text-align: left;
   border: 0;
+  justify-content: flex-start;
+  align-items: center;
 }
 .headline button i {
-text-align: right;
+margin-left: auto;
 }
 
 .breadcrumbs {
+  display: flex;
+  align-items: center;
   font-family: lato;
   font-weight: regular;
   font-size: 1em;
@@ -325,48 +391,51 @@ text-align: right;
   margin-left: 15px;
   color: #53a2da;
 }
-.active {
+#active {
   color: #acacac;
 }
 .breadcrumbs i {
   font-size: 0.4em;
 }
-h2{
+form{
   font-family: lato;
   font-weight: 300;
-  font-size: 2em;
 }
-h3{
-  font-family: lato;
-  font-weight: 300;
-  font-size: 1.5em;  
+input {
+  margin-bottom: 15px;
 }
-p{
-  font-family: lato;
-  font-weight: regular;
-  font-size: 1em;
-}
-h4{
-  font-family: lato;
-  font-weight: 300;
-  font-size: 1.2em;
-}
-
-article{
-  height: 1000px;
-}
-footer{
-  height: 400px;
-  background-color: gray;
-}
-img {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
+.textfield {
+  width: 100%;
 }
 .sidebar{
-  width: 90px;
   display: inline-block;
+}
+a i{
+  font-size: 0.4em;
+}
+.container{
+  display: flex;
+}
+.container div{
+  margin-left: 15px;
+  margin-right: 15px;}
+.name{  
+  font-family: lato;
+  font-weight: bold;
+}
+footer{
+  padding: 15px;
+  background-color: #4a5158;
+  color: white;
+  font-family: lato;
+  font-weight: 300;
+}
+footer i {
+  font-size: 0.5em;
+}
+footer a{
+  color: white;
+  text-decoration: none;
 }
 @media only screen and (min-width: 1600px) {
   .wrapper{
@@ -374,3 +443,4 @@ img {
     grid-template-columns: 2fr 1fr;
   }
 }
+

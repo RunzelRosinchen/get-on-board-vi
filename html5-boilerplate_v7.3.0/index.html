@@ -24,61 +24,81 @@
 
   <!-- Add your site or application content here -->
 <nav>
+  <input id="searchbar"type="text" placeholder="Search">
   <ul>
     <li><a href="">Link 1 Lorem</a></li>
     <li><a href="">Link 2 ipsum</a></li>
     <li><a href="">Link 3 dolor</a></li>
     <li><a href="">Link 4 sit</a></li>
     <li><a href="">Link 5 amet</a></li>
-    <p>Searchbar</p>
-  </ul>
+    </ul>
   </nav>
-<header>
-<img img src="https://dummyimage.com/768x432/#eef1f5/#acacac.jpg" alt="dummyimage">
-
-<div class="headline"><h1>Headline</h1>
+<header class="headline">
+<img src="https://dummyimage.com/768x432/eef1f5/acacac.jpg" alt="dummyimage">
+<div><h1>Headline</h1>
   <p>Text</p>
-  <button><a>no target</a><i class="fas fa-arrow-right"></i></button></div>
-<div class="breadcrumbs"><span><i class="fas fa-arrow-right"></i> Home</span> <span><i class="fas fa-arrow-right"> </i>Test Folder</span><span class="active"><i class="fas fa-arrow-right"> </i>Test</span></div>
+  <button><span>no target</span><i class="fas fa-arrow-right"></i></button>
+</div>
 </header>
+<div class="breadcrumbs"><span><i class="fas fa-arrow-right"></i> Home</span> <span><i class="fas fa-arrow-right"> </i> Test Folder</span><span id="active"><i class="fas fa-arrow-right"> </i> Test</span></div>
 <div class="wrapper">
 <section>
-<h2>Fundamentals I: Layoutm Styling & Semantics</h2>
+<h2>Fundamentals I: Layout, Styling & Semantics</h2>
 <h3>Image-section (Landscape, no caption)</h3>
-<img src="https://dummyimage.com/480x240/#eef1f5/#acacac.jpg" alt="dummyimage">
+<img src="https://dummyimage.com/480x240/eef1f5/acacac.jpg" alt="dummyimage">
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 <h3>Video Section</h3>
 <video></video>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 <h3>Copy text with all format types</h3>
-<p></p>
+<p>This is a blind text. <b>Bold text makes you pay attention.</b> <sub>Sub</sub>scripts and <sup>Super</sup>scripts look funny.</p>
+<ul>
+  <li>Some</li>
+  <li>Circles</li>
+</ul>
+<a href="">This link leads to the CI.</a><br>
+<a href="" target="_blank">This link leads to the CI in a new window.</a>
+<table>
+  <tr>
+    <th>Super Nice</th>
+    <th>Duper Table</th>
+  </tr>
+  <tr>
+    <td>Super</td>
+    <td>Duper</td>
+  </tr>
+  <tr>
+    <td>Nice</td>
+    <td>Table</td>
+  </tr>
+</table> 
 <h3>Form</h3>
 <form>
   <label for="text">Text</label><br>
-  <input id="text" type="text" name="text"><br>
+  <input class="textfield" id="text" type="text" name="text"><br>
   <label for="text_man">Text mandatory*</label><br>
-  <input id="text_man" type="text" name="text_man" required><br>
+  <input class="textfield" id="text_man" type="text" name="text_man" required><br>
   <label for="number">Number</label><br>
-  <input id="number" type="number"><br>
+  <input class="textfield" id="number" type="number"><br>
   <label for="text_area">text area</label><br>
-  <textarea id="text_area"></textarea><br>
+  <textarea class="textfield" id="text_area"></textarea><br>
   <span>checkbox</span><br>
   <input type="checkbox" id="yes" name="checkbox" value="yes">
   <label for="yes"> yes</label><br>
   <input type="checkbox" id="no" name="checkbox" value="no">
   <label for="no"> no</label><br>
   <span>radio</span><br>
-  <input type="radio" id="yes" name="radio" value="yes">
-  <label for="yes"> yes</label><br>
-  <input type="radio" id="no" name="radio" value="no">
-  <label for="no"> no</label><br>
+  <input type="radio" id="yes_r" name="radio" value="yes">
+  <label for="yes_r"> yes</label><br>
+  <input type="radio" id="no_r" name="radio" value="no">
+  <label for="no_r"> no</label><br>
   <label for="select_box">select box</label><br>
-  <select id="select_box" name="select_box">
-    <option value="yes">yes</option>
-    <option value="no">no</option>
+  <select class="textfield" id="select_box" name="select_box">
+    <option value="yes"> yes</option>
+    <option value="no"> no</option>
   </select><br>
   <label for="email">email field (mandatory)*</label><br>
-  <input type="email" required>
+  <input class="textfield" type="email" id="email" required>
   <hr>
   <input type="submit" value="Send"><input type="reset" value="Cancel"><br>
   <span>All fields marked with an asterisk (*) are mandatory.</span>
@@ -87,20 +107,23 @@
 <aside>
   <h4>Subheadline lorem ipsum</h4>
   <hr>
-  <div class="wrapper">
-  <img src="https://dummyimage.com/50x100/#eef1f5/#acacac.jpg" alt="dummyimage">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <div class="container">
+  <img class="sidebar" src="https://dummyimage.com/50x100/eef1f5/acacac.jpg" alt="dummyimage">
+  <div><span class="name">Contact No. 3, whose name is even a little bit longer. It will definitely cause a line break. In fact it is so long, Lonnger than anything else.</span><br>
+<span>Mock Contact Manager</span><br>
+<span>T +492444749292838</span><br>
+<span><a href="mailto:kdfoej@fjieofj.de"><i class="fas fa-arrow-right"></i> Send E-Mail</a></span></div>
 </div>
   <hr>
   <h4>All Document Types</h4>
 </aside>
 </div>
 <article>
-<img src="https://dummyimage.com/1500x1000/#eef1f5/#acacac.jpg" alt="dummyimage">
+<img src="https://dummyimage.com/1500x1000/eef1f5/acacac.jpg" alt="dummyimage">
 <h4>teaserrow with default teaser with image and link (new window)</h4>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 <h5>2 teaser</h5>
-<img src="https://dummyimage.com/768x432/#eef1f5/#acacac.jpg" alt="dummyimage">
+<img src="https://dummyimage.com/768x432/eef1f5/acacac.jpg" alt="dummyimage">
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 <h5>Test Video</h5>
 <video></video>
@@ -113,7 +136,9 @@
 <h5>Document list</h5>
 </article>
 <footer>
-<p>Footer</p>
+<p><i class="far fa-copyright"></i> 2018 Ninja Developers</p>
+<a href=""><i class="fas fa-arrow-right"></i> target same window</a> <br>
+<a href="" target="_blank"><i class="fas fa-arrow-right"> </i> target new window</a>
 </footer>  
 
 
