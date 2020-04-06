@@ -1,159 +1,272 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Onboarding Fundamentals I</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8">
-  <title>Onboarding Fundamentals I</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
+    <script
+      src="https://kit.fontawesome.com/393bd0bb74.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-  <script src="https://kit.fontawesome.com/393bd0bb74.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+    <meta name="theme-color" content="#fafafa" />
+  </head>
 
-  <meta name="theme-color" content="#fafafa">
-</head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
 
-<body>
-  <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
+    <!-- Add your site or application content here -->
+    <nav>
+      <input id="searchbar" type="text" placeholder="Search" />
+      <ul>
+        <li><a href="#section_1">Link 1 Lorem</a></li>
+        <li><a href="#section_2">Link 2 ipsum</a></li>
+        <li><a href="#section_3">Link 3 dolor</a></li>
+        <li><a href="#section_4">Link 4 sit</a></li>
+        <li><a href="#section_5">Link 5 amet</a></li>
+      </ul>
+    </nav>
+    <header class="headline">
+      <img
+        src="https://dummyimage.com/768x432/eef1f5/acacac.jpg"
+        alt="dummyimage"
+      />
+      <div>
+        <h1>Headline</h1>
+        <p>Text</p>
+        <a>
+          <span>no target</span><i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </header>
+    <div class="section_padding">
+    <div class="breadcrumb">
+      <span><i class="fas fa-arrow-right"></i> Home</span>
+      <span><i class="fas fa-arrow-right"> </i> Test Folder</span
+      ><span id="active"><i class="fas fa-arrow-right"> </i> Test</span>
+    </div>
+    <div class="wrapper">
+      <section>
+        <h2>Fundamentals I: Layout, Styling & Semantics</h2>
+        <h3 id="section_1">Image-section (Landscape, no caption)</h3>
+        <img
+          src="https://dummyimage.com/480x240/eef1f5/acacac.jpg"
+          alt="dummyimage"
+        />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <h3 id="section_2">Video Section</h3>
+        <video controls></video>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <h3>Copy text with all format types</h3>
+        <p>
+          This is a blind text. <b>Bold text makes you pay attention.</b>
+          <sub>Sub</sub>scripts and <sup>Super</sup>scripts look funny.
+        </p>
+        <ul>
+          <li>Some</li>
+          <li>Circles</li>
+        </ul>
+        <a href="">This link leads to the CI.</a>
+        <a href="" target="_blank"
+          >This link leads to the CI in a new window.</a
+        >
+        <table>
+          <tr>
+            <th>Super Nice</th>
+            <th>Duper Table</th>
+          </tr>
+          <tr>
+            <td>Super</td>
+            <td>Duper</td>
+          </tr>
+          <tr>
+            <td>Nice</td>
+            <td>Table</td>
+          </tr>
+        </table>
+        <h3 id="section_4">Form</h3>
+        <form>
+          <label for="text">Text</label>
+          <input class="textfield" id="text" type="text" name="text" />
+          <label for="text_man">Text mandatory*</label>
+          <input
+            class="textfield"
+            id="text_man"
+            type="text"
+            name="text_man"
+            required
+          />
+          <label for="number">Number</label>
+          <input class="textfield" id="number" type="number" />
+          <label for="text_area">text area</label>
+          <textarea class="textfield" id="text_area"></textarea>
+          <span>checkbox</span>
+          <input type="checkbox" id="yes" name="checkbox" value="yes" />
+          <label for="yes"> yes</label>
+          <div>
+            <input type="checkbox" id="no" name="checkbox" value="no" />
+            <label for="no"> no</label>
+          </div>
+          <span>radio</span>
+          <input type="radio" id="yes_r" name="radio" value="yes" />
+          <label for="yes_r"> yes</label>
+          <div>
+            <input type="radio" id="no_r" name="radio" value="no" />
+            <label for="no_r"> no</label>
+          </div>
+          <label for="select_box">select box</label>
+          <select class="textfield" id="select_box" name="select_box">
+            <option value="yes"> yes</option>
+            <option value="no"> no</option>
+          </select>
+          <label for="email">email field (mandatory)*</label>
+          <input class="textfield" type="email" id="email" required />
+          <hr />
+          <input type="submit" value="Send" id="send" />
+          <input type="reset" value="Cancel" id="cancel" />
+          <span id="info">All fields marked with an asterisk (*) are mandatory.</span>
+        </form>
+      </section>
+      <aside>
+        <h4>Subheadline lorem ipsum</h4>
+        <hr />
+        <div class="container">
+          <img
+            class="contact_img"
+            src="https://dummyimage.com/50x100/eef1f5/acacac.jpg"
+            alt="dummyimage"
+          />
+          <div class="contact">
+            <span class="name">
+              Contact No. 3, whose name is even a little bit longer. It will
+              definitely cause a line break. In fact it is so long, Lonnger than
+              anything else.</span
+            >
+            <span class="title">Mock Contact Manager</span>
+            <span>T +492444749292838</span>
+            <span>F +492444749292837</span>
+            <span>
+              <a href="mailto:kdfoej@fjieofj.de">
+                <i class="fas fa-arrow-right"></i> Send E-Mail</a
+              >
+            </span>
+          </div>
+        </div>
+        <hr />
+        <h4>All Document Types</h4>
+      </aside>
+    </div>
+    <article id="section_5">
+      <img
+        src="https://dummyimage.com/1500x1000/eef1f5/acacac.jpg"
+        alt="dummyimage"
+      />
+      <h4>teaserrow with default teaser with image and link (new window)</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </p>
+      <h5>2 teaser</h5>
+      <img
+        src="https://dummyimage.com/768x432/eef1f5/acacac.jpg"
+        alt="dummyimage"
+      />
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </p>
+      <h5>Test Video</h5>
+      <video controls></video>
+      <hr />
+      <h3>Teaserrow with 3 Teasers: First teaser is a video Teaser</h3>
+      <h5>testvid</h5>
+      <video controls></video>
+      <h5>default teaser with text</h5>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </p>
+      <h5>Document list</h5>
+    </article>
+  </div>
+    <footer>
+      <p><i class="far fa-copyright"></i> 2018 Ninja Developers</p>
+      <a href=""><i class="fas fa-arrow-right"></i> target same window</a>
+      <a href="" target="_blank"
+        ><i class="fas fa-arrow-right"> </i> target new window</a
+      >
+    </footer>
 
-  <!-- Add your site or application content here -->
-<nav>
-  <input id="searchbar"type="text" placeholder="Search">
-  <ul>
-    <li><a href="">Link 1 Lorem</a></li>
-    <li><a href="">Link 2 ipsum</a></li>
-    <li><a href="">Link 3 dolor</a></li>
-    <li><a href="">Link 4 sit</a></li>
-    <li><a href="">Link 5 amet</a></li>
-    </ul>
-  </nav>
-<header class="headline">
-<img src="https://dummyimage.com/768x432/eef1f5/acacac.jpg" alt="dummyimage">
-<div><h1>Headline</h1>
-  <p>Text</p>
-  <button><span>no target</span><i class="fas fa-arrow-right"></i></button>
-</div>
-</header>
-<div class="breadcrumbs"><span><i class="fas fa-arrow-right"></i> Home</span> <span><i class="fas fa-arrow-right"> </i> Test Folder</span><span id="active"><i class="fas fa-arrow-right"> </i> Test</span></div>
-<div class="wrapper">
-<section>
-<h2>Fundamentals I: Layout, Styling & Semantics</h2>
-<h3>Image-section (Landscape, no caption)</h3>
-<img src="https://dummyimage.com/480x240/eef1f5/acacac.jpg" alt="dummyimage">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<h3>Video Section</h3>
-<video></video>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<h3>Copy text with all format types</h3>
-<p>This is a blind text. <b>Bold text makes you pay attention.</b> <sub>Sub</sub>scripts and <sup>Super</sup>scripts look funny.</p>
-<ul>
-  <li>Some</li>
-  <li>Circles</li>
-</ul>
-<a href="">This link leads to the CI.</a><br>
-<a href="" target="_blank">This link leads to the CI in a new window.</a>
-<table>
-  <tr>
-    <th>Super Nice</th>
-    <th>Duper Table</th>
-  </tr>
-  <tr>
-    <td>Super</td>
-    <td>Duper</td>
-  </tr>
-  <tr>
-    <td>Nice</td>
-    <td>Table</td>
-  </tr>
-</table> 
-<h3>Form</h3>
-<form>
-  <label for="text">Text</label><br>
-  <input class="textfield" id="text" type="text" name="text"><br>
-  <label for="text_man">Text mandatory*</label><br>
-  <input class="textfield" id="text_man" type="text" name="text_man" required><br>
-  <label for="number">Number</label><br>
-  <input class="textfield" id="number" type="number"><br>
-  <label for="text_area">text area</label><br>
-  <textarea class="textfield" id="text_area"></textarea><br>
-  <span>checkbox</span><br>
-  <input type="checkbox" id="yes" name="checkbox" value="yes">
-  <label for="yes"> yes</label><br>
-  <input type="checkbox" id="no" name="checkbox" value="no">
-  <label for="no"> no</label><br>
-  <span>radio</span><br>
-  <input type="radio" id="yes_r" name="radio" value="yes">
-  <label for="yes_r"> yes</label><br>
-  <input type="radio" id="no_r" name="radio" value="no">
-  <label for="no_r"> no</label><br>
-  <label for="select_box">select box</label><br>
-  <select class="textfield" id="select_box" name="select_box">
-    <option value="yes"> yes</option>
-    <option value="no"> no</option>
-  </select><br>
-  <label for="email">email field (mandatory)*</label><br>
-  <input class="textfield" type="email" id="email" required>
-  <hr>
-  <input type="submit" value="Send"><input type="reset" value="Cancel"><br>
-  <span>All fields marked with an asterisk (*) are mandatory.</span>
-</form>
-</section>
-<aside>
-  <h4>Subheadline lorem ipsum</h4>
-  <hr>
-  <div class="container">
-  <img class="sidebar" src="https://dummyimage.com/50x100/eef1f5/acacac.jpg" alt="dummyimage">
-  <div><span class="name">Contact No. 3, whose name is even a little bit longer. It will definitely cause a line break. In fact it is so long, Lonnger than anything else.</span><br>
-<span>Mock Contact Manager</span><br>
-<span>T +492444749292838</span><br>
-<span><a href="mailto:kdfoej@fjieofj.de"><i class="fas fa-arrow-right"></i> Send E-Mail</a></span></div>
-</div>
-  <hr>
-  <h4>All Document Types</h4>
-</aside>
-</div>
-<article>
-<img src="https://dummyimage.com/1500x1000/eef1f5/acacac.jpg" alt="dummyimage">
-<h4>teaserrow with default teaser with image and link (new window)</h4>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<h5>2 teaser</h5>
-<img src="https://dummyimage.com/768x432/eef1f5/acacac.jpg" alt="dummyimage">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<h5>Test Video</h5>
-<video></video>
-<hr>
-<h3>Teaserrow with 3 Teasers: First teaser is a video Teaser</h3>
-<h5>testvid</h5>
-<video></video>
-<h5>default teaser with text</h5>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<h5>Document list</h5>
-</article>
-<footer>
-<p><i class="far fa-copyright"></i> 2018 Ninja Developers</p>
-<a href=""><i class="fas fa-arrow-right"></i> target same window</a> <br>
-<a href="" target="_blank"><i class="fas fa-arrow-right"> </i> target new window</a>
-</footer>  
+    <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="js/vendor/jquery-3.4.1.min.js"><\/script>'
+        );
+    </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
-
-<script src="js/vendor/modernizr-3.8.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
-
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </body>
 </html>
