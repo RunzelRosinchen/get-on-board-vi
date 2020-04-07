@@ -597,6 +597,16 @@ a i {
   font-family: lato;
   font-weight: bold;
 }
+.download {
+  font-family: lato;
+  font-weight: 400;
+  color: #53a2da;
+  text-decoration: none;
+}
+.download span {
+  color: #d3cdce;
+  display: block;
+}
 footer {
   padding: 20px;
   background-color: #4a5158;
