@@ -401,6 +401,7 @@ img {
 video {
   width: 100%;
   height: auto;
+  margin-bottom: 20px;
 }
 .headline {
   background-color: #53a2da;
@@ -623,6 +624,10 @@ a i {
   stroke-width: 0;
   width: 50px;
 }
+aside {
+  margin-bottom: 30px;
+}
+
 footer {
   padding: 20px;
   background-color: #4a5158;
@@ -788,5 +793,8 @@ footer a {
     margin-right: 100px;
     margin-left: 10px;
     width: calc(50% - 110px);
+  }
+  nav span {
+    right: 105px;
   }
 }
