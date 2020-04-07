@@ -265,16 +265,17 @@ textarea {
 body {
   overflow-x: hidden;
 }
-hr{
+hr {
   margin: 10px 0;
 }
-.border {
+nav, main, .margin, .breadcrumb, aside {
   margin-left: 20px;
   margin-right: 20px;
 }
-.border_footer {
-  margin-left: 20px;
-  margin-right: 20px;
+
+footer {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .highlight_text {
   margin-left: 20px;
@@ -297,6 +298,9 @@ hr{
   background-color: #f4f2f3;
   padding-top: 20px;
   padding-bottom: 20px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
 }
 @font-face {
   font-family: lato;
@@ -447,10 +451,11 @@ header img {
   font-size: 1em;
   margin-top: 35px;
 }
-.breadcrumb span {
+.breadcrumb a {
   margin-right: 15px;
   color: #53a2da;
   line-height: 15px;
+  text-decoration: none;
 }
 #active {
   color: #acacac;
@@ -612,14 +617,13 @@ a i {
   color: #d3cdce;
   display: block;
 }
-.download_flex{
+.download_flex {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 .icon {
   height: 2.5em;
-  stroke: #d3cdce;
   fill: #d3cdce;
   stroke-width: 0;
   width: 50px;
@@ -774,16 +778,20 @@ footer a {
   }
 }
 @media only screen and (min-width: 1600px) {
-  .border {
+  nav, main, .margin, .breadcrumb{
     margin-left: 100px;
     margin-right: 100px;
-  }
-  footer {
-    padding-left: 100px;
   }
   header {
-    margin-left: 100px;
-    margin-right: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color:#309dd3;
+  }
+  .headline {
+    position: absolute;
+    width: 30%;
+    top: 40%;
+    right: 10%;
   }
   .highlight_img {
     margin-left: 100px;
