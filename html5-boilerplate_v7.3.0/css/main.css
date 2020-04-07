@@ -265,6 +265,9 @@ textarea {
 body {
   overflow-x: hidden;
 }
+hr{
+  margin: 10px 0;
+}
 .border {
   margin-left: 20px;
   margin-right: 20px;
@@ -378,6 +381,7 @@ h4 {
   font-family: lato;
   font-weight: 300;
   font-size: 1.2em;
+  margin-bottom: 5px;
 }
 h5 {
   font-family: lato;
@@ -606,6 +610,18 @@ a i {
 .download span {
   color: #d3cdce;
   display: block;
+}
+.download_flex{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.icon {
+  height: 2.5em;
+  stroke: #d3cdce;
+  fill: #d3cdce;
+  stroke-width: 0;
+  width: 50px;
 }
 footer {
   padding: 20px;
